@@ -22,6 +22,26 @@ jobs:
       env:
         PIP_BREAK_SYSTEM_PACKAGES: 1
 
+    strategy:
+      fail-fast: false
+      matrix:
+        ubuntu_version: [jammy, noble]
+        libcamera_version: ["package-xml-0.1", "package-xml-0.3"]
+        bloom_branch: ["meson"]
+        target_arch: [amd64, arm64]
+        include:
+        - ubuntu_version: jammy
+          ros_version: humble
+        - ubuntu_version: noble
+          ros_version: jazzy
+        exclude:
+        - # ERROR: Meson version is 0.61.2 but project requires >= 0.63
+          ubuntu_version: jammy
+          libcamera_version: package-xml-0.3
+        - # ModuleNotFoundError: No module named 'imp'
+          ubuntu_version: noble
+          libcamera_version: package-xml-0.1
+
     steps:
       - run: apt update
 
@@ -32,13 +52,25 @@ jobs:
       - name: install bloom (meson)
         run: |
           apt install -y python3-pip git
-          pip install git+https://github.com/christianrauch/bloom.git@meson
+          pip install git+https://github.com/christianrauch/bloom.git@${{ matrix.bloom_branch }}
+
+      - name: generate repos file
+        run: |
+          cat << EOF > sources.repos
+          repositories:
+            src/libcamera:
+              type: git
+              url: https://github.com/christianrauch/libcamera.git
+              version: ${{ matrix.libcamera_version }}
+          EOF
 
       - run: usermod --add-subuids 100000-165535 --add-subgids 100000-165535 $(whoami)
 
       - uses: jspricke/ros-deb-builder-action@main
         with:
-          DEB_DISTRO: jammy
-          DEB_ARCH: arm64
-          ROS_DISTRO: humble
+          DEB_DISTRO: ${{ matrix.ubuntu_version }}
+          DEB_ARCH: ${{ matrix.target_arch }}
+          ROS_DISTRO: ${{ matrix.ros_version }}
+          SKIP_CHECKOUT: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PACKAGES_BRANCH: "${{ matrix.ubuntu_version }}-${{ matrix.ros_version }}-${{ matrix.target_arch }}-${{ matrix.libcamera_version }}-${{ matrix.bloom_branch }}"
