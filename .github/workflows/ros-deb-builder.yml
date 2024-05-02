@@ -16,6 +16,12 @@ jobs:
       image: ubuntu:22.04
       options: --privileged
 
+    strategy:
+      fail-fast: false
+      matrix:
+        libcamera_version: ["package-xml-0.1", "package-xml-0.2", "package-xml-0.3"]
+        bloom_branch: ["meson", "meson-strip"]
+
     steps:
       - run: apt update
 
@@ -26,7 +32,17 @@ jobs:
       - name: install bloom (meson)
         run: |
           apt install -y python3-pip git
-          pip install git+https://github.com/christianrauch/bloom.git@meson
+          pip install git+https://github.com/christianrauch/bloom.git@${{ matrix.bloom_branch }}
+
+      - name: generate repos file
+        run: |
+          cat << EOF > sources.repos
+          repositories:
+            src/libcamera:
+              type: git
+              url: https://github.com/christianrauch/libcamera.git
+              version: ${{ matrix.libcamera_version }}
+          EOF
 
       - run: usermod --add-subuids 100000-165535 --add-subgids 100000-165535 $(whoami)
 
@@ -35,4 +51,6 @@ jobs:
           DEB_DISTRO: jammy
           DEB_ARCH: arm64
           ROS_DISTRO: humble
+          SKIP_CHECKOUT: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PACKAGES_BRANCH: "jammy-humble-arm64-${{ matrix.libcamera_version }}-${{ matrix.bloom_branch }}"
