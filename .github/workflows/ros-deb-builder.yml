@@ -19,8 +19,19 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        ubuntu_version: [jammy, noble]
         libcamera_version: ["package-xml-0.1", "package-xml-0.2", "package-xml-0.3"]
-        bloom_branch: ["meson", "meson-strip"]
+        # bloom_branch: ["meson", "meson-strip"]
+        bloom_branch: ["meson-strip"]
+        target_arch: [arm64]
+        include:
+        - ubuntu_version: jammy
+          ros_version: humble
+        - ubuntu_version: noble
+          ros_version: jazzy
+        exclude:
+        - ubuntu_version: noble
+          libcamera_version: package-xml-0.1
 
     steps:
       - run: apt update
@@ -48,9 +59,9 @@ jobs:
 
       - uses: jspricke/ros-deb-builder-action@main
         with:
-          DEB_DISTRO: jammy
-          DEB_ARCH: arm64
-          ROS_DISTRO: humble
+          DEB_DISTRO: ${{ matrix.ubuntu_version }}
+          DEB_ARCH: ${{ matrix.target_arch }}
+          ROS_DISTRO: ${{ matrix.ros_version }}
           SKIP_CHECKOUT: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PACKAGES_BRANCH: "jammy-humble-arm64-${{ matrix.libcamera_version }}-${{ matrix.bloom_branch }}"
+          PACKAGES_BRANCH: "${{ matrix.ubuntu_version }}-${{ matrix.ros_version }}-${{ matrix.target_arch }}-${{ matrix.libcamera_version }}-${{ matrix.bloom_branch }}"
