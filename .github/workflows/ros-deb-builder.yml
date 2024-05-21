@@ -23,7 +23,7 @@ jobs:
         libcamera_version: ["package-xml-0.1", "package-xml-0.2", "package-xml-0.3"]
         # bloom_branch: ["meson", "meson-strip"]
         bloom_branch: ["meson-strip"]
-        target_arch: [arm64]
+        target_arch: [amd64, arm64]
         include:
         - ubuntu_version: jammy
           ros_version: humble
