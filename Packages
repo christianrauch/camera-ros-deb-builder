@@ -1,0 +1,17 @@
+Package: ros-humble-libcamera
+Architecture: amd64
+Version: 0.3.0-3-g36d2d912-2024.05.21.04.36
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 1812
+Depends: libc6 (>= 2.34), libdrm2 (>= 2.4.62), libevent-2.1-7 (>= 2.1.8-stable), libevent-pthreads-2.1-7 (>= 2.1.8-stable), libgcc-s1 (>= 3.3.1), libjpeg8 (>= 8c), libsdl2-2.0-0 (>= 2.0.16), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12), libudev1 (>= 183), libyaml-0-2, libatomic1, libdrm-dev, libevent-dev, libjpeg-dev, libsdl2-dev, libssl-dev, libudev-dev, libyaml-dev
+Filename: ./ros-humble-libcamera_0.3.0-3-g36d2d912-2024.05.21.04.36_amd64.deb
+Size: 560474
+MD5sum: ac2903beb21dc0234dc8042355368d24
+SHA1: 38b1e1dc58927a95cb41b0328d8de441913a3b0c
+SHA256: 7c6c1ee4a102d40ff04dd816fb9bccf9bdd883980a1a9001fe70a7fe5a964f76
+SHA512: aceed064756337802f642dc622f6e929fdda3705cb6370df7b9141da2ceafd966a0dc255f3805a1fd0c19d6c69e1e4e4eb8cb1b5c6b7e0e0cf45f85a5fcb76cb
+Homepage: https://libcamera.org
+Description: An open source camera stack and framework for Linux, Android, and ChromeOS
+
