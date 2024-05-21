@@ -1,0 +1,17 @@
+Package: ros-jazzy-libcamera
+Architecture: amd64
+Version: 0.2.0-2-g9af220ba-2024.05.21.04.37
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 1783
+Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.62), libevent-2.1-7t64 (>= 2.1.8-stable), libevent-pthreads-2.1-7t64 (>= 2.1.8-stable), libgcc-s1 (>= 3.3.1), libjpeg8 (>= 8c), libsdl2-2.0-0 (>= 2.0.16), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), libudev1 (>= 183), libyaml-0-2, libatomic1, libdrm-dev, libevent-dev, libjpeg-dev, libsdl2-dev, libssl-dev, libudev-dev, libyaml-dev
+Filename: ./ros-jazzy-libcamera_0.2.0-2-g9af220ba-2024.05.21.04.37_amd64.deb
+Size: 548204
+MD5sum: 6807cd923cbce64d387a54eea58f2de3
+SHA1: 4f5255b5c61618fd5e0ce42f6d1fed34e6228abe
+SHA256: 9b84a56083727a5c9eac8a637ae3bdf10ecbcd67120273c5d3c73f2e329c7bc1
+SHA512: b9f03f835ae0d76b6206f855a05bff6cc9d243d3b929c54247382e88d59aee433862fdf253afc26f1a7ecc0eba762d0a35d0bf0151698dbd7011c2aa31919c4b
+Homepage: https://libcamera.org
+Description: An open source camera stack and framework for Linux, Android, and ChromeOS
+
