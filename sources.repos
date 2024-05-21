@@ -1,0 +1,5 @@
+repositories:
+  src/libcamera:
+    type: git
+    url: https://github.com/christianrauch/libcamera.git
+    version: 36d2d91205bf5e515f59ca4dc3128bfa338a5e39
