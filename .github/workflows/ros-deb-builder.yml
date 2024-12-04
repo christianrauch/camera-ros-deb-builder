@@ -28,7 +28,7 @@ jobs:
       matrix:
         ubuntu_version: [jammy, noble]
         libcamera_version: ["package-xml-0.1", "package-xml-0.3"]
-        bloom_branch: ["meson"]
+        bloom_branch: ["meson", "meson-strip"]
         target_arch: [amd64, arm64]
         include:
         - ubuntu_version: jammy
