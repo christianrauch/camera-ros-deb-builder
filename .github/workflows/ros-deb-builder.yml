@@ -60,7 +60,7 @@ jobs:
             src/camera_ros:
               type: git
               url: https://github.com/christianrauch/camera_ros.git
-              version: main
+              version: thread_fixes
           EOF
 
       - run: usermod --add-subuids 100000-165535 --add-subgids 100000-165535 $(whoami)
@@ -72,4 +72,4 @@ jobs:
           ROS_DISTRO: ${{ matrix.ros_version }}
           SKIP_CHECKOUT: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PACKAGES_BRANCH: "${{ matrix.ubuntu_version }}-${{ matrix.ros_version }}-${{ matrix.target_arch }}-${{ matrix.libcamera_version }}-${{ matrix.bloom_branch }}-main"
+          PACKAGES_BRANCH: "${{ matrix.ubuntu_version }}-${{ matrix.ros_version }}-${{ matrix.target_arch }}-${{ matrix.libcamera_version }}-${{ matrix.bloom_branch }}-thread_fixes"
