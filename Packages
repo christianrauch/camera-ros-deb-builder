@@ -1,0 +1,36 @@
+Package: ros-jazzy-camera-ros-dbgsym
+Package-Type: ddeb
+Architecture: amd64
+Version: 0.2.0-9-ge43581a-2024.12.07.22.37
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ros-jazzy-camera-ros
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 3482
+Depends: ros-jazzy-camera-ros (= 0.2.0-9-ge43581a-2024.12.07.22.37)
+Filename: ./ros-jazzy-camera-ros-dbgsym_0.2.0-9-ge43581a-2024.12.07.22.37_amd64.ddeb
+Size: 3289920
+MD5sum: 800251ad7d98819add1b321ae7234ade
+SHA1: fadd3f776c729705c96792bd21162ee16894a565
+SHA256: 8c59a2a7d0db6a85be1111cef97b9153057df6f7e65bb881b86fa52b7387f14a
+SHA512: 5b5ec9f02df9cef97d42a3dacd8a0f205c3165ee218d203316282eabc2b186d0305a3802a3e537e72f7141bdb68a9e2988d320580cb887f26c336a05b723206f
+Description: debug symbols for ros-jazzy-camera-ros
+Build-Ids: 55d0aee74f63a3769a9cdc1b02ee1076ce3d8260 90d9287c2643fbc69e642940bf4b280de56a309e
+
+Package: ros-jazzy-camera-ros
+Architecture: amd64
+Version: 0.2.0-9-ge43581a-2024.12.07.22.37
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 618
+Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.3.1), libopencv-core406t64 (>= 4.6.0+dfsg), libopencv-imgcodecs406t64 (>= 4.6.0+dfsg), libstdc++6 (>= 13.1), ros-jazzy-libcamera, ros-jazzy-camera-info-manager, ros-jazzy-cv-bridge, ros-jazzy-image-view, ros-jazzy-rclcpp, ros-jazzy-rclcpp-components, ros-jazzy-ros2launch, ros-jazzy-sensor-msgs
+Filename: ./ros-jazzy-camera-ros_0.2.0-9-ge43581a-2024.12.07.22.37_amd64.deb
+Size: 180286
+MD5sum: 1ee99e4942e266df9523826efcbedc68
+SHA1: fa29c7161f4583f130f18fa18788394d1401a495
+SHA256: 902bf486a8817bb723648066858bb6d21618760a2c9876ada2023f05bd1d9641
+SHA512: 55064d7344cc12ce79590906ec10089b7e2a51bd6db32ff1132cdd381e772626d8a1680987d55362b6063d07f99fe3658385c0118e3a8c6a8b91a2d4e3fe41b6
+Description: node for libcamera supported cameras (V4L2, Raspberry Pi Camera Modules)
+
