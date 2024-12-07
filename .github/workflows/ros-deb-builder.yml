@@ -23,19 +23,10 @@ jobs:
       fail-fast: false
       matrix:
         ubuntu_version: [noble]
-        libcamera_version: ["package-xml-0.3"]
-        bloom_branch: ["meson-strip"]
         target_arch: [amd64, arm64]
         include:
         - ubuntu_version: noble
           ros_version: jazzy
-        exclude:
-        - # ERROR: Meson version is 0.61.2 but project requires >= 0.63
-          ubuntu_version: jammy
-          libcamera_version: package-xml-0.3
-        - # ModuleNotFoundError: No module named 'imp'
-          ubuntu_version: noble
-          libcamera_version: package-xml-0.1
 
     steps:
       - run: apt update
@@ -44,10 +35,10 @@ jobs:
         run: |
           apt install -y sudo
 
-      - name: install bloom (meson)
+      - name: install bloom
         run: |
           apt install -y python3-pip git
-          pip install git+https://github.com/christianrauch/bloom.git@${{ matrix.bloom_branch }}
+          apt install -y python3-bloom
 
       - name: generate repos file
         run: |
@@ -68,4 +59,4 @@ jobs:
           ROS_DISTRO: ${{ matrix.ros_version }}
           SKIP_CHECKOUT: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PACKAGES_BRANCH: "${{ matrix.ubuntu_version }}-${{ matrix.ros_version }}-${{ matrix.target_arch }}-${{ matrix.libcamera_version }}-${{ matrix.bloom_branch }}-main"
+          PACKAGES_BRANCH: "${{ matrix.ubuntu_version }}-${{ matrix.ros_version }}-${{ matrix.target_arch }}-main"
