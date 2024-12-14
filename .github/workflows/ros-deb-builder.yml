@@ -22,11 +22,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ubuntu_version: [noble]
-        libcamera_version: ["package-xml-0.3"]
-        bloom_branch: ["meson-strip"]
+        ubuntu_version: [jammy, noble]
+        libcamera_version: ["package-xml-0.1", "package-xml-0.3"]
+        bloom_branch: ["meson", "meson-strip"]
         target_arch: [amd64, arm64]
         include:
+        - ubuntu_version: jammy
+          ros_version: humble
         - ubuntu_version: noble
           ros_version: jazzy
         exclude:
@@ -68,4 +70,4 @@ jobs:
           ROS_DISTRO: ${{ matrix.ros_version }}
           SKIP_CHECKOUT: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PACKAGES_BRANCH: "${{ matrix.ubuntu_version }}-${{ matrix.ros_version }}-${{ matrix.target_arch }}-${{ matrix.libcamera_version }}-${{ matrix.bloom_branch }}-main"
+          PACKAGES_BRANCH: "${{ matrix.ubuntu_version }}-${{ matrix.ros_version }}-${{ matrix.target_arch }}-${{ matrix.libcamera_version }}-${{ matrix.bloom_branch }}"
