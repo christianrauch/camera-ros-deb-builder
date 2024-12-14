@@ -1,0 +1,36 @@
+Package: ros-humble-camera-ros-dbgsym
+Package-Type: ddeb
+Architecture: arm64
+Version: 0.2.0-14-g5723c8e-2024.12.14.01.42
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ros-humble-camera-ros
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 2730
+Depends: ros-humble-camera-ros (= 0.2.0-14-g5723c8e-2024.12.14.01.42)
+Filename: ./ros-humble-camera-ros-dbgsym_0.2.0-14-g5723c8e-2024.12.14.01.42_arm64.ddeb
+Size: 2516988
+MD5sum: 4019873bcab3493b08e993a9d3dfab90
+SHA1: e08eeaa6089ed540f7dd3c09afa8b367f31d0fa7
+SHA256: 67ccbe6264f7d646ed37022ff24cdddbab92ff9114fa8eadbba8fda43948f717
+SHA512: 0947dccd2837f02fb7845ec2486b63322875d01f8e7b3969d91521cd5e42cc1f3b3d6e3564f7f544aa1e8453097cdcf738a121b8b74d7810213d62f6e30e4bf7
+Description: debug symbols for ros-humble-camera-ros
+Build-Ids: 6ba018edeb5153fad73985757a2d860cb18417e8 94e5fecb02da920d153745fcc0f54efb7f91ed6a
+
+Package: ros-humble-camera-ros
+Architecture: arm64
+Version: 0.2.0-14-g5723c8e-2024.12.14.01.42
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 426
+Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.3.1), libopencv-core4.5d (>= 4.5.4+dfsg), libopencv-imgcodecs4.5d (>= 4.5.4+dfsg), libstdc++6 (>= 12), ros-humble-libcamera (>= 0.1), ros-humble-ament-index-python, ros-humble-camera-info-manager, ros-humble-cv-bridge, ros-humble-rclcpp, ros-humble-rclcpp-components, ros-humble-ros2launch, ros-humble-sensor-msgs
+Filename: ./ros-humble-camera-ros_0.2.0-14-g5723c8e-2024.12.14.01.42_arm64.deb
+Size: 128982
+MD5sum: 5486e92eccefec286c1ff830831b8b60
+SHA1: f51f633408f87a1398547727fd2199f74919ef5b
+SHA256: decaa471a34e0bd3fac52defc839fe2f0c6967f4e7bfe7cbcd45514ede8a4024
+SHA512: fe7abd5bc0962ef24920c93356066ada1ad3c28c14449255d1ad22769bdaf034f01324bacfcd9ddbddeafa15102a81b40230e305251f5ee57ac933d487994fa9
+Description: node for libcamera supported cameras (V4L2, Raspberry Pi Camera Modules)
+
