@@ -1,0 +1,3 @@
+camera_ros:
+  ubuntu:
+  - ros-humble-camera-ros
