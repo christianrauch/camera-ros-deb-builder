@@ -1,0 +1,5 @@
+repositories:
+  src/camera_ros:
+    type: git
+    url: https://github.com/christianrauch/camera_ros.git
+    version: 5723c8e2bb1ce264f42ea76d400f324288bebc52
