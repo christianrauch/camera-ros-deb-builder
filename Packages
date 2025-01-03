@@ -1,0 +1,53 @@
+Package: ros-jazzy-camera-ros-dbgsym
+Package-Type: ddeb
+Architecture: arm64
+Version: 0.3.0-2025.01.03.21.55
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ros-jazzy-camera-ros
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 3561
+Depends: ros-jazzy-camera-ros (= 0.3.0-2025.01.03.21.55)
+Filename: ./ros-jazzy-camera-ros-dbgsym_0.3.0-2025.01.03.21.55_arm64.ddeb
+Size: 3248056
+MD5sum: 40846bc807cddb4d0961027b303225c9
+SHA1: 8c5acb6127d50317eb5b5eb455d5c4e23c8d5d26
+SHA256: 2274eb550398e1848ac1df94b25f6f39bd27452a9834469293e91c4493a971b1
+SHA512: adddd618c61204d3807a645048f3123725657c280e429135e9164727021e4d3663a598460741b3b9630fcab650277254e12dde6cdb703d8110e8a1e1baca0d40
+Description: debug symbols for ros-jazzy-camera-ros
+Build-Ids: b9cdaac3bf9bb5c6acf6fc15fcb0ea4d8988c01a df994905988b839f91048f8a304cb100ffa6bde1
+
+Package: ros-jazzy-camera-ros
+Architecture: arm64
+Version: 0.3.0-2025.01.03.21.55
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 646
+Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.3.1), libopencv-core406t64 (>= 4.6.0+dfsg), libopencv-imgcodecs406t64 (>= 4.6.0+dfsg), libstdc++6 (>= 13.1), ros-jazzy-libcamera (>= 0.1), ros-jazzy-ament-index-python, ros-jazzy-camera-info-manager, ros-jazzy-cv-bridge, ros-jazzy-image-view, ros-jazzy-rclcpp, ros-jazzy-rclcpp-components, ros-jazzy-ros2launch, ros-jazzy-sensor-msgs
+Filename: ./ros-jazzy-camera-ros_0.3.0-2025.01.03.21.55_arm64.deb
+Size: 170100
+MD5sum: 9fa55bef46a88b9e3315ee1a05b4a017
+SHA1: 9f63d4a6fb94e6fc4774b212a729fc111bd1b01d
+SHA256: b72d92046de06a7d3bdc4188fbc8978eb64184084b28781e73e63a6a58619f7e
+SHA512: fdab4b02874e5454933e0c38c4dffc2a0161c18d4b9331c1b66bb1f300629db6d47306462d3bdf4a4c3268c0d64aa0c1018b8de087056807a62a104988e76bf2
+Description: node for libcamera supported cameras (V4L2, Raspberry Pi Camera Modules)
+
+Package: ros-jazzy-libcamera
+Architecture: arm64
+Version: 0.3.0-580-gebc51328-2025.01.03.21.02
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 4416
+Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.62), libevent-2.1-7t64 (>= 2.1.8-stable), libevent-pthreads-2.1-7t64 (>= 2.1.8-stable), libgcc-s1 (>= 4.2), libjpeg8 (>= 8c), libsdl2-2.0-0 (>= 2.0.16), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), libudev1 (>= 183), libyaml-0-2, libatomic1, libdrm-dev, libevent-dev, libjpeg-dev, libsdl2-dev, libssl-dev, libudev-dev, libyaml-dev
+Filename: ./ros-jazzy-libcamera_0.3.0-580-gebc51328-2025.01.03.21.02_arm64.deb
+Size: 1070302
+MD5sum: 09087556e42775e1779d29d52d98c910
+SHA1: 879bda9dcb25d25fe9d97cc0977342e806859b81
+SHA256: fd387b6799596594c35f23acad467e7aeaa4822bbfffcf0174876fc67adae7da
+SHA512: 9cbd6dad561cf1a1a3dad8115fc320a988922bd96e55ef05012715fd5251cf03369b4e948c384e9c088e6253d50dd5d8fe369cdafb9ec1e2ed83e8a7f4b4ad39
+Homepage: https://libcamera.org
+Description: An open source camera stack and framework for Linux, Android, and ChromeOS
+
