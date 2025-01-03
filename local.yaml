@@ -1,0 +1,6 @@
+libcamera:
+  ubuntu:
+  - ros-humble-libcamera
+camera_ros:
+  ubuntu:
+  - ros-humble-camera-ros
