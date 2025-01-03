@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
+      # issues with ubuntu:24.04:
+      # W: binfmt_misc not found in /proc/mounts -- not mounted?
+      # W: cannot find update-binfmts
+      # E: arm64 can neither be executed natively nor via qemu user emulation with binfmt_misc
       image: ubuntu:22.04
       options: --privileged
       env:
