@@ -1,0 +1,73 @@
+Package: ros-humble-camera-ros-dbgsym
+Package-Type: ddeb
+Architecture: amd64
+Version: 0.3.0-2025.01.03.21.00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ros-humble-camera-ros
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 2732
+Depends: ros-humble-camera-ros (= 0.3.0-2025.01.03.21.00)
+Filename: ./ros-humble-camera-ros-dbgsym_0.3.0-2025.01.03.21.00_amd64.ddeb
+Size: 2587650
+MD5sum: e96c143ba2dca7a8c7654ecd08be3f1a
+SHA1: 3d7517693ffd8a93d6bb8e6d3de0c51ca0526b43
+SHA256: 5b38608d14a7f9ab1ea09c65a51931b1208d353723e17a5b4a05d8da93b9f1ea
+SHA512: 8ac516e53e660636de5e1196047d3b58849dfd1fa03349e9c0432acfcc43de7024ac93aefb1999444980e5c4bb780ff5c8bf06f9a1e6455819b15bf475ae37ab
+Description: debug symbols for ros-humble-camera-ros
+Build-Ids: 2bec1009767daebbc2f2e540f23b6605411ad9bb e82c193a930e313efa095511c2c5cf764b492837
+
+Package: ros-humble-camera-ros
+Architecture: amd64
+Version: 0.3.0-2025.01.03.21.00
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 474
+Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.3.1), libopencv-core4.5d (>= 4.5.4+dfsg), libopencv-imgcodecs4.5d (>= 4.5.4+dfsg), libstdc++6 (>= 12), ros-humble-libcamera (>= 0.1), ros-humble-ament-index-python, ros-humble-camera-info-manager, ros-humble-cv-bridge, ros-humble-rclcpp, ros-humble-rclcpp-components, ros-humble-ros2launch, ros-humble-sensor-msgs
+Filename: ./ros-humble-camera-ros_0.3.0-2025.01.03.21.00_amd64.deb
+Size: 139034
+MD5sum: 965204be99141ffc2f15f3ecc83deb24
+SHA1: f9b017c227b1b2225d1ecc8d5645bf1829d724ed
+SHA256: f943e2775c0e92cb5ad9f36156ce71f2f6b7a451ff9ab70d4576a090f01ff0b1
+SHA512: 9db3f409313bf7c1aab22807171da08740d081e196aaa89409ca4397e223701fcde9c800fc4935a3db87f62f7328533c0ff758813460a7f868c28a8cd3757b76
+Description: node for libcamera supported cameras (V4L2, Raspberry Pi Camera Modules)
+
+Package: ros-humble-libcamera-dbgsym
+Package-Type: ddeb
+Architecture: amd64
+Version: 0.1.0-2-g0f5d5ce9-2025.01.03.20.59
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ros-humble-libcamera
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 11556
+Depends: ros-humble-libcamera (= 0.1.0-2-g0f5d5ce9-2025.01.03.20.59)
+Filename: ./ros-humble-libcamera-dbgsym_0.1.0-2-g0f5d5ce9-2025.01.03.20.59_amd64.ddeb
+Size: 11118636
+MD5sum: eb995209a3e40492228f83e71145bf74
+SHA1: b000306c0741211b852b0a9b5e2bedddb6de6c99
+SHA256: f4f55a8d7b81a8485740fee3aef323e7f2cf7b17862b49ddd42ef4afb03b330e
+SHA512: c89eb238df59edc08baecc0e93295619a44a641450c5237ca29ec34b76d5c8dae9e64a53fbbebd5ef40fca0dbfaa6b64267065084a258b8182d015b679fe7989
+Description: debug symbols for ros-humble-libcamera
+Build-Ids: 56c742c00a8867b545623bed26cecb23f11b4c6b 7a2e0f984bdbd4b21d885f41cb54d383a2d5c7fa 7b6268595bc256058455121db9fb3a7ce6d76d1b 84eaf30c3c531ad15bc82b991620ad3959cce2a0 e55c6084b41f8e980fdeea5f5bd42aaf3a73a1fd
+
+Package: ros-humble-libcamera
+Architecture: amd64
+Version: 0.1.0-2-g0f5d5ce9-2025.01.03.20.59
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 1734
+Depends: libc6 (>= 2.34), libdrm2 (>= 2.4.62), libevent-2.1-7 (>= 2.1.8-stable), libevent-pthreads-2.1-7 (>= 2.1.8-stable), libgcc-s1 (>= 3.3.1), libjpeg8 (>= 8c), libsdl2-2.0-0 (>= 2.0.16), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12), libudev1 (>= 183), libyaml-0-2, libatomic1, libdrm-dev, libevent-dev, libjpeg-dev, libsdl2-dev, libssl-dev, libudev-dev, libyaml-dev
+Filename: ./ros-humble-libcamera_0.1.0-2-g0f5d5ce9-2025.01.03.20.59_amd64.deb
+Size: 531558
+MD5sum: 733492695305b163cb8b18d7805ebe24
+SHA1: fc19840a4940ae08d7c2bd89d99300a0f9661a52
+SHA256: 69fc141169134a338e102ca567cffde753e1b652cc3b214847463156aefd3a52
+SHA512: adc8df0c06a1728160fcfccc95d87e5607868b87f76f3cc8e27c436d33655ebdd9af11268ec9a35b6ed3bc4b429bcbe4ec340bee315c0ef4eaa9024e1b79a386
+Homepage: https://libcamera.org
+Description: An open source camera stack and framework for Linux, Android, and ChromeOS
+
