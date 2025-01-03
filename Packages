@@ -1,0 +1,53 @@
+Package: ros-humble-camera-ros-dbgsym
+Package-Type: ddeb
+Architecture: amd64
+Version: 0.3.0-2025.01.03.21.00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ros-humble-camera-ros
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 2732
+Depends: ros-humble-camera-ros (= 0.3.0-2025.01.03.21.00)
+Filename: ./ros-humble-camera-ros-dbgsym_0.3.0-2025.01.03.21.00_amd64.ddeb
+Size: 2587650
+MD5sum: e96c143ba2dca7a8c7654ecd08be3f1a
+SHA1: 3d7517693ffd8a93d6bb8e6d3de0c51ca0526b43
+SHA256: 5b38608d14a7f9ab1ea09c65a51931b1208d353723e17a5b4a05d8da93b9f1ea
+SHA512: 8ac516e53e660636de5e1196047d3b58849dfd1fa03349e9c0432acfcc43de7024ac93aefb1999444980e5c4bb780ff5c8bf06f9a1e6455819b15bf475ae37ab
+Description: debug symbols for ros-humble-camera-ros
+Build-Ids: 2bec1009767daebbc2f2e540f23b6605411ad9bb e82c193a930e313efa095511c2c5cf764b492837
+
+Package: ros-humble-camera-ros
+Architecture: amd64
+Version: 0.3.0-2025.01.03.21.00
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 474
+Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.3.1), libopencv-core4.5d (>= 4.5.4+dfsg), libopencv-imgcodecs4.5d (>= 4.5.4+dfsg), libstdc++6 (>= 12), ros-humble-libcamera (>= 0.1), ros-humble-ament-index-python, ros-humble-camera-info-manager, ros-humble-cv-bridge, ros-humble-rclcpp, ros-humble-rclcpp-components, ros-humble-ros2launch, ros-humble-sensor-msgs
+Filename: ./ros-humble-camera-ros_0.3.0-2025.01.03.21.00_amd64.deb
+Size: 139038
+MD5sum: 45906e437cb35f07f664974593cf8ee8
+SHA1: 4168b2589c87191fe8fc570e3c0285632ee60e33
+SHA256: cf128ddf74da43c25738644d921c1b0ed7ed0f24e8acb2bd2e80f61f96710897
+SHA512: d694465ec0eacd7b62b09ec0a6aecdcdc0146e6ed3b0f5539713ea2891779fb65937de592245c8981f8adcb876477c2b7dcf3aa8b459eb0a6ae69cbb11eceefd
+Description: node for libcamera supported cameras (V4L2, Raspberry Pi Camera Modules)
+
+Package: ros-humble-libcamera
+Architecture: amd64
+Version: 0.1.0-2-g0f5d5ce9-2025.01.03.20.59
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 1734
+Depends: libc6 (>= 2.34), libdrm2 (>= 2.4.62), libevent-2.1-7 (>= 2.1.8-stable), libevent-pthreads-2.1-7 (>= 2.1.8-stable), libgcc-s1 (>= 3.3.1), libjpeg8 (>= 8c), libsdl2-2.0-0 (>= 2.0.16), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12), libudev1 (>= 183), libyaml-0-2, libatomic1, libdrm-dev, libevent-dev, libjpeg-dev, libsdl2-dev, libssl-dev, libudev-dev, libyaml-dev
+Filename: ./ros-humble-libcamera_0.1.0-2-g0f5d5ce9-2025.01.03.20.59_amd64.deb
+Size: 531352
+MD5sum: 2a3136bff782063fdb505aa18d7f1a69
+SHA1: 921a6dc326a682cc0332eb5b5a645067f355572b
+SHA256: 0b07f789b514463e5b2882854575b2b17c02a90052a6c080d8ba74af6df9df75
+SHA512: 708c8470c366362e5d4887bc5ada1dafe70002f9607932be5b5bbe3c227bb8f62d62ab83913e9637845fb3ba6db9f6abfe3fe96d37c88fa30ae54b6ae3e3f6da
+Homepage: https://libcamera.org
+Description: An open source camera stack and framework for Linux, Android, and ChromeOS
+
