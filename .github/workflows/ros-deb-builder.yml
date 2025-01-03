@@ -26,22 +26,16 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ubuntu_version: [jammy, noble]
-        libcamera_version: ["package-xml-0.1", "package-xml-0.3"]
+        # jammy / package-xml-0.3:
+        # ERROR: Meson version is 0.61.2 but project requires >= 0.63
+        # noble / package-xml-0.1:
+        # ModuleNotFoundError: No module named 'imp'
+        version:
+          - {ubuntu: jammy,   ros: humble,  libcamera: package-xml-0.1}
+          - {ubuntu: noble,   ros: jazzy,   libcamera: package-xml-0.3}
+          - {ubuntu: noble,   ros: jazzy,   libcamera: package-xml-0.4}
         bloom_branch: ["meson", "meson-strip"]
         target_arch: [amd64, arm64]
-        include:
-        - ubuntu_version: jammy
-          ros_version: humble
-        - ubuntu_version: noble
-          ros_version: jazzy
-        exclude:
-        - # ERROR: Meson version is 0.61.2 but project requires >= 0.63
-          ubuntu_version: jammy
-          libcamera_version: package-xml-0.3
-        - # ModuleNotFoundError: No module named 'imp'
-          ubuntu_version: noble
-          libcamera_version: package-xml-0.1
 
     steps:
       - run: apt update
@@ -62,7 +56,7 @@ jobs:
             src/libcamera:
               type: git
               url: https://github.com/christianrauch/libcamera.git
-              version: ${{ matrix.libcamera_version }}
+              version: ${{ matrix.version.libcamera }}
             src/camera_ros:
               type: git
               url: https://github.com/christianrauch/camera_ros.git
@@ -73,9 +67,9 @@ jobs:
 
       - uses: jspricke/ros-deb-builder-action@main
         with:
-          DEB_DISTRO: ${{ matrix.ubuntu_version }}
+          DEB_DISTRO: ${{ matrix.version.ubuntu }}
           DEB_ARCH: ${{ matrix.target_arch }}
-          ROS_DISTRO: ${{ matrix.ros_version }}
+          ROS_DISTRO: ${{ matrix.version.ros }}
           SKIP_CHECKOUT: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PACKAGES_BRANCH: "${{ matrix.ubuntu_version }}-${{ matrix.ros_version }}-${{ matrix.target_arch }}-${{ matrix.libcamera_version }}-${{ matrix.bloom_branch }}"
+          PACKAGES_BRANCH: "${{ matrix.version.ubuntu }}-${{ matrix.version.ros }}-${{ matrix.target_arch }}-${{ matrix.version.libcamera }}-${{ matrix.bloom_branch }}"
