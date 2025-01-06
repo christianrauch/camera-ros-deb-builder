@@ -1,0 +1,5 @@
+repositories:
+  src/libcamera:
+    type: git
+    url: https://github.com/christianrauch/libcamera-raspberrypi.git
+    version: 212b015385df09205f2968b7f66f134af6184e06
