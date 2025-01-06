@@ -59,7 +59,7 @@ jobs:
 
       - run: usermod --add-subuids 100000-165535 --add-subgids 100000-165535 $(whoami)
 
-      - uses: jspricke/ros-deb-builder-action@main
+      - uses: christianrauch/ros-deb-builder-action@network
         with:
           DEB_DISTRO: ${{ matrix.version.ubuntu }}
           DEB_ARCH: ${{ matrix.target_arch }}
