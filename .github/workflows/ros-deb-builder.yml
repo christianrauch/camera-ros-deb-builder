@@ -31,10 +31,8 @@ jobs:
         # noble / package-xml-0.1:
         # ModuleNotFoundError: No module named 'imp'
         version:
-          - {ubuntu: jammy,   ros: humble,  libcamera: package-xml-0.1}
-          - {ubuntu: noble,   ros: jazzy,   libcamera: package-xml-0.3}
-          - {ubuntu: noble,   ros: jazzy,   libcamera: package-xml-0.4}
-        bloom_branch: ["meson", "meson-strip"]
+          - {ubuntu: noble,   ros: jazzy,   libcamera: package-xml}
+        bloom_branch: ["meson_wrap_mode"]
         target_arch: [amd64, arm64]
 
     steps:
@@ -55,7 +53,7 @@ jobs:
           repositories:
             src/libcamera:
               type: git
-              url: https://github.com/christianrauch/libcamera.git
+              url: https://github.com/christianrauch/libcamera-raspberrypi.git
               version: ${{ matrix.version.libcamera }}
             src/camera_ros:
               type: git
