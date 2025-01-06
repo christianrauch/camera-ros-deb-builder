@@ -40,7 +40,7 @@ jobs:
 
       - name: install sudo
         run: |
-          apt install -y sudo binfmt-support
+          apt install -y sudo binfmt-support qemu-user-static
 
       - name: install bloom (meson)
         run: |
