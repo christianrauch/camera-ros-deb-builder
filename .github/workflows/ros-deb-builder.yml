@@ -67,3 +67,4 @@ jobs:
           SKIP_CHECKOUT: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PACKAGES_BRANCH: "${{ matrix.version.ubuntu }}-${{ matrix.version.ros }}-${{ matrix.target_arch }}-${{ matrix.version.libcamera }}-${{ matrix.bloom_branch }}"
+          SBUILD_CONF: $enable_network = 1;
