@@ -17,7 +17,7 @@ jobs:
       # W: binfmt_misc not found in /proc/mounts -- not mounted?
       # W: cannot find update-binfmts
       # E: arm64 can neither be executed natively nor via qemu user emulation with binfmt_misc
-      image: ubuntu:22.04
+      image: ubuntu:24.04
       options: --privileged
       env:
         PIP_BREAK_SYSTEM_PACKAGES: 1
