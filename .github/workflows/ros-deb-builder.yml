@@ -55,10 +55,6 @@ jobs:
               type: git
               url: https://github.com/christianrauch/libcamera-raspberrypi.git
               version: ${{ matrix.version.libcamera }}
-            src/camera_ros:
-              type: git
-              url: https://github.com/christianrauch/camera_ros.git
-              version: main
           EOF
 
       - run: usermod --add-subuids 100000-165535 --add-subgids 100000-165535 $(whoami)
