@@ -53,7 +53,7 @@ jobs:
           repositories:
             src/libcamera:
               type: git
-              url: https://github.com/christianrauch/libcamera-raspberrypi.git
+              url: https://github.com/christianrauch/libcamera.git
               version: ${{ matrix.version.libcamera }}
           EOF
 
