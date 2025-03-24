@@ -1,0 +1,37 @@
+Package: ros-jazzy-libcamera-dbgsym
+Package-Type: ddeb
+Architecture: amd64
+Version: 0.4.0-161-gc69251dc-2025.03.24.21.55
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ros-jazzy-libcamera
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 32062
+Depends: ros-jazzy-libcamera (= 0.4.0-161-gc69251dc-2025.03.24.21.55)
+Filename: ./ros-jazzy-libcamera-dbgsym_0.4.0-161-gc69251dc-2025.03.24.21.55_amd64.ddeb
+Size: 30889094
+MD5sum: 81c60e153521e80d5b600b3cc5156bf9
+SHA1: 4dde63837ac2e9de30156eed106122cc79e3be9a
+SHA256: d52ea39ac02d37ea58792d08711cfe6d2b5e053dcd40281d37be634e9b7a04fe
+SHA512: 6b3aaf0c01d200f04b9c82dac4e2cba04e0f4cc5d1dddcf0efdf40c525160d760ae8ff863ebf9c2ccf332f823a92af5d148654a1c1e9125fd825e562b5468ea1
+Description: debug symbols for ros-jazzy-libcamera
+Build-Ids: 0063553955cd4c0c0d80dd4bb997661e234a5200 0ccc1c33695a47d5a37b1bede4319cee2c08610a 15f13a28371f5dd0d2d90d03e461caaaa9cd75b9 2491db1801d2741cbf143f99d1adc921991ba7f1 3c282e5f2d39a9510097b28439fc3592e9edb5b3 5d73355f52f3bdc865fd714081c33536bcda73db 700a2bea2d610dde22611892dc29596a9835e907 81f83dc67b917926300c199748254c4198d9522f 90f8d7c5197095eaafc2fa77966dc1be2edbc2b2 97f4a35b751081cfbe38f40b14d704d20af99a75 9c853ef2e217b14a8896f0a13956d9e2fd53ab54 be55ef381070b545fb05a0e8a40657de1256b97d f53939886ce9f10618610a6b445efcaee8bd17ec
+
+Package: ros-jazzy-libcamera
+Architecture: amd64
+Version: 0.4.0-161-gc69251dc-2025.03.24.21.55
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 6639
+Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.62), libevent-2.1-7t64 (>= 2.1.8-stable), libevent-pthreads-2.1-7t64 (>= 2.1.8-stable), libgcc-s1 (>= 3.3.1), libjpeg8 (>= 8c), libsdl2-2.0-0 (>= 2.0.16), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), libudev1 (>= 183), libyaml-0-2, libatomic1, libdrm-dev, libevent-dev, libjpeg-dev, libsdl2-dev, libssl-dev, libudev-dev, libyaml-dev
+Filename: ./ros-jazzy-libcamera_0.4.0-161-gc69251dc-2025.03.24.21.55_amd64.deb
+Size: 1442482
+MD5sum: 81805a5fd9e6042a796a8a242b33ed8a
+SHA1: 706dc296396b71dde76b759367a01e977fc4983b
+SHA256: 39280cabcb62c58f576035da90590c74417285ad2c87217b6ec7c346e793b6d1
+SHA512: ed1b83a3cb198a66188b1d09ed1f70800f5b0ff5aaba820bfb313e8bf3f06061c3e1d932343cc8ef5ec089bc45734a666bab3ca88fe509445208e72bc2c6555e
+Homepage: https://libcamera.org
+Description: An open source camera stack and framework for Linux, Android, and ChromeOS
+
