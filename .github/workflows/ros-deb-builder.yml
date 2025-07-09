@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: ${{ matrix.runner }}
 
     env:
       PIP_BREAK_SYSTEM_PACKAGES: 1
@@ -26,10 +26,12 @@ jobs:
         version:
           - {ubuntu: noble,   ros: jazzy,   libcamera: package-xml}
         bloom_branch: ["meson_wrap_mode"]
-        target_arch: [amd64, arm64]
+        runner: [ubuntu-24.04, ubuntu-24.04-arm]
 
     steps:
       - run: sudo apt update
+
+      - run: dpkg-architecture >> "$GITHUB_ENV"
 
       - name: install bloom (meson)
         run: |
@@ -50,10 +52,10 @@ jobs:
       - uses: jspricke/ros-deb-builder-action@main
         with:
           DEB_DISTRO: ${{ matrix.version.ubuntu }}
-          DEB_ARCH: ${{ matrix.target_arch }}
+          DEB_ARCH: ${{ env.DEB_HOST_ARCH }}
           ROS_DISTRO: ${{ matrix.version.ros }}
           SKIP_CHECKOUT: true
           SBUILD_CONF: "$enable_network = 1;"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
-          PACKAGES_BRANCH: "${{ matrix.version.ubuntu }}-${{ matrix.version.ros }}-${{ matrix.target_arch }}-${{ matrix.version.libcamera }}-${{ matrix.bloom_branch }}"
+          PACKAGES_BRANCH: "${{ matrix.version.ubuntu }}-${{ matrix.version.ros }}-${{ env.DEB_HOST_ARCH }}-${{ matrix.version.libcamera }}-${{ matrix.bloom_branch }}"
