@@ -25,6 +25,8 @@ jobs:
         # ModuleNotFoundError: No module named 'imp'
         version:
           - {ubuntu: noble,   ros: jazzy,   libcamera: package-xml-0.5}
+          - {ubuntu: noble,   ros: jazzy,   libcamera: package-xml}
+          - {ubuntu: noble,   ros: jazzy,   libcamera: package-xml-plain}
         bloom_branch: ["meson_wrap_mode"]
         runner: [ubuntu-24.04, ubuntu-24.04-arm]
 
