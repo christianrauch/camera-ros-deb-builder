@@ -1,0 +1,37 @@
+Package: ros-jazzy-libcamera-dbgsym
+Package-Type: ddeb
+Architecture: arm64
+Version: 0.4.0-354-ged0d1215-2025.07.12.18.34
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ros-jazzy-libcamera
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 39721
+Depends: ros-jazzy-libcamera (= 0.4.0-354-ged0d1215-2025.07.12.18.34)
+Filename: ./ros-jazzy-libcamera-dbgsym_0.4.0-354-ged0d1215-2025.07.12.18.34_arm64.ddeb
+Size: 36515688
+MD5sum: 527431654d6573e5cc88a192a06caf52
+SHA1: ef75a61cfe8461e56a73008f41040200f0a75b1a
+SHA256: 8562618d3d3f3d82b77aab01cb2357f0a3d1f9f3c6fb408699288ad8fdb3d7eb
+SHA512: b6d7a72c42833b5f5cc3443a3aa75271c4913f637b25b40d3ad77aaab9bf9445ffd5ec6412c5ffa3b94e0745145f16c96c9368d407a992b28dc6b91dce11d5ab
+Description: debug symbols for ros-jazzy-libcamera
+Build-Ids: 05ecbde8b1f9a0b4a8e8917ff86cf42408b81424 228e080a83225996981aca5c2f046e0956b352b6 377658006a9dc197961375dca91084c1e890f0bf 45356ef4906d669462fc3f8d1bf8a60437165060 4ae64daa0006311583f50893cb3f6064084cb2c2 5a9ae07e49cc8ef1f4c2df34f8269fb75058ea8e 66aa95d9e3bc141468893669a22a2a217ce62086 7b9e03ec93e9b88fca4f49054f2202e85106a40e 8e32fb2e39131bf637f0dec6b8d11ef61a94804a 9670a8639c430be47c1f440feca9718f19af8707 cb71822dd3122c4217acb7281efa1a77b73ccbbc f0f935a37c4841b35f30ce93768193411990099a f9564dc67a56dd179dea4bbcf44b7f4fb6851ce8 fa1905c13b8228b5a7bafaaf7e41e7f8bd05ec30
+
+Package: ros-jazzy-libcamera
+Architecture: arm64
+Version: 0.4.0-354-ged0d1215-2025.07.12.18.34
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 7805
+Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.62), libevent-2.1-7t64 (>= 2.1.8-stable), libevent-pthreads-2.1-7t64 (>= 2.1.8-stable), libgcc-s1 (>= 4.2), libjpeg8 (>= 8c), libsdl2-2.0-0 (>= 2.0.16), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), libudev1 (>= 183), libyaml-0-2, libatomic1, libdrm-dev, libevent-dev, libjpeg-dev, libsdl2-dev, libssl-dev, libudev-dev, libyaml-dev, python3-dev
+Filename: ./ros-jazzy-libcamera_0.4.0-354-ged0d1215-2025.07.12.18.34_arm64.deb
+Size: 1594580
+MD5sum: f9800094781619401f9e3403ad1e1034
+SHA1: 11b8e399a67b6c063f509ece3ae2c58171336329
+SHA256: 89e1f4b191110878ece32e841e2b261dfb744dfe9d8c7a8c050678e698ecc915
+SHA512: 9ffb95d80ccb06662ce735574bed92aa94786202a0b04c98f592b8934f2aec6f540e51b32c054d397d49a3b3133806a2b146d64b1839f80a0057a152f5101927
+Homepage: https://libcamera.org
+Description: An open source camera stack and framework for Linux, Android, and ChromeOS
+
