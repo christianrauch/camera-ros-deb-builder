@@ -1,0 +1,37 @@
+Package: ros-jazzy-libcamera-dbgsym
+Package-Type: ddeb
+Architecture: amd64
+Version: 0.4.0-350-gb50020d2-2025.07.12.18.33
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ros-jazzy-libcamera
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 21152
+Depends: ros-jazzy-libcamera (= 0.4.0-350-gb50020d2-2025.07.12.18.33)
+Filename: ./ros-jazzy-libcamera-dbgsym_0.4.0-350-gb50020d2-2025.07.12.18.33_amd64.ddeb
+Size: 19933076
+MD5sum: 052b9406c24a751b40c8198a23a4fcd3
+SHA1: 82a53584e76939dc0b374b6f6fc4166a1cc9b431
+SHA256: f7a9a41427616859a43ca7d2f4f65997ff99329af11dd596760b981ac8dca088
+SHA512: 428298ea96073b5ff0e1002c1925950354672db06569bdf60a3fb48dec8d6f9f05c5d9acfffd66396b9d4fe7cc6a31912d2dd91c1c71db1d52e3571b2318f02e
+Description: debug symbols for ros-jazzy-libcamera
+Build-Ids: 00dd58854fe917f4df62b3a37d88d851e1de1e89 2334effbfb52ff2b4ce266c8a45480db64e133a4 454f5e0f9b28a57a8fda69de5d7ec56c60804bfb 6d186b296927ea3e5c33ec6c929e0aa9e9c1331c be443841e4de38dedf926e9cbfffdb421cbd8a75 c41a6f0c233aa2a7a0767b186936f02f9d83ca47 d58bb2ee46a85dd6f5737d434276f50838f64117 f2ec77f4f320f6229902ae4b81badf9fea112f90
+
+Package: ros-jazzy-libcamera
+Architecture: amd64
+Version: 0.4.0-350-gb50020d2-2025.07.12.18.33
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 3056
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), libudev1 (>= 183), libyaml-0-2, libatomic1, libssl-dev, libudev-dev, libyaml-dev, python3-dev
+Filename: ./ros-jazzy-libcamera_0.4.0-350-gb50020d2-2025.07.12.18.33_amd64.deb
+Size: 865906
+MD5sum: 5788b0075c953935ca1c06bdde8f8342
+SHA1: 4955abb9ab151782d153cda091373808e2687c7e
+SHA256: 1663a4888ea2964c424cade0a41e451efb9350350da7f005b11a4a6f60e24d33
+SHA512: afcd5725fa24616ae077d1b809bfcc089f5b4dc8d18ce44d3905a315ac1da3d1e5a1633ab325cd101a715f222204c8367721207bdb77d9dd55e3f725105bc982
+Homepage: https://libcamera.org
+Description: An open source camera stack and framework for Linux, Android, and ChromeOS
+

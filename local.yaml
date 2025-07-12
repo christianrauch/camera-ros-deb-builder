@@ -1,0 +1,3 @@
+libcamera:
+  ubuntu:
+  - ros-jazzy-libcamera
