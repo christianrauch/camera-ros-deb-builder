@@ -1,0 +1,37 @@
+Package: ros-jazzy-libcamera-dbgsym
+Package-Type: ddeb
+Architecture: arm64
+Version: 0.4.0-350-gb50020d2-2025.07.12.18.34
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ros-jazzy-libcamera
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 39768
+Depends: ros-jazzy-libcamera (= 0.4.0-350-gb50020d2-2025.07.12.18.34)
+Filename: ./ros-jazzy-libcamera-dbgsym_0.4.0-350-gb50020d2-2025.07.12.18.34_arm64.ddeb
+Size: 36519842
+MD5sum: 1cce2cce33ce6bcfe93599f0c7146761
+SHA1: 05a992392fe3604a733c837b9e6d66dd48c0d953
+SHA256: 08a4b8cf9ce87b1b658558d0753b913db753531cb5ac320b87c3dd44b74e9145
+SHA512: 3d121c5ba187bd2e400d7d4c541ddfb2e77ea5a03339e56e84fd5450a2b5a387eef921668f12a8d4ae6d23a97d06e67b3925fb66d21dea5c4a32af2f70eacd58
+Description: debug symbols for ros-jazzy-libcamera
+Build-Ids: 0754f0b16e4649d7ba34795a8696ad6e6fa7c4ac 0be4a78aabaa6af42f57e1cb1215d965aabd535d 20ec280950e62dccca45fe8c668235c19f56c115 332f73457b4e69f9987dd7062e4a9b702e0ba965 33d75fef6c418dadec6068e1fbea5e829368b39d 5f2ce7e66c0dcb9c7a9ea4acbc5bfa50156a3c59 756a64a6d0d110f8767e624e1035d0db47858da5 77720246eeaf59a956107672963c8a758857b5c2 78f7b240cae58189e7d6e3af1a0d8c5ce6b4753e a4d1af77c2b43fc8f474eba0dcfaa90ad207539d c4b204c60cd505e9862007a403a8bccd909c6410 d0493d879100c998d041251b8e22fdaa78cc56fe dbac0d0ac212f1b02eeea1d2bafee3cd2d83f2b6 ed147ad0edcc3e0c4be50565586c502aa73f2d7b
+
+Package: ros-jazzy-libcamera
+Architecture: arm64
+Version: 0.4.0-350-gb50020d2-2025.07.12.18.34
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 7895
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 4.2), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), libudev1 (>= 183), libyaml-0-2, libatomic1, libssl-dev, libudev-dev, libyaml-dev, python3-dev
+Filename: ./ros-jazzy-libcamera_0.4.0-350-gb50020d2-2025.07.12.18.34_arm64.deb
+Size: 1563858
+MD5sum: c3cbb36ecfbfbebb8d1bf52f278ce593
+SHA1: 9d3fdcc68681d3e7e33145ffb1dccea9cef0f440
+SHA256: 8aed0ad8fb9d8998964456105774acc885f5a917dbcf5ab2919c6909c78a48d7
+SHA512: ee5c9d7cd50864aa07a9f5a3177842ae8741b12a26eb0f5bb9e10eb0347439e1b099a77027e29402479e26830da8f38c3e80f48a80ae1f4856f3bb2961061262
+Homepage: https://libcamera.org
+Description: An open source camera stack and framework for Linux, Android, and ChromeOS
+
